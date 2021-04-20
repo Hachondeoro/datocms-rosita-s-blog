@@ -1,4 +1,3 @@
-// import '../styles/index.css'
 import "@components/css/bootstrap.min.css"
 import "@components/css/fancybox.min.css"
 import "@components/css/fontawesome.min.css"

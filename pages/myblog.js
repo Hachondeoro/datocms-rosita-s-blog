@@ -97,8 +97,8 @@ export default function Index({ subscription }) {
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </Container>
           <Link href="/">
-            <div class="col-lg-3">
-              <a class="circle-button">
+            <div className="col-lg-3">
+              <a className="circle-button">
                 GO BACK! <br></br>
               </a>{" "}
             </div>

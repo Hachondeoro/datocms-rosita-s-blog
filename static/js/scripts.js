@@ -349,7 +349,7 @@
 
     imagesLoaded++;
 
-    if (imagesLoaded >= imagesAmount) hidePreloader();
+    hidePreloader();
 
     progressStep = showedProgress;
     currentProgress = ((100 / imagesAmount) * imagesLoaded) << 0;
@@ -416,11 +416,5 @@
           $(this).html($(this).data('count'));
         
     });
-	
-	
-	
-	
- 
-	
 	
 })(jQuery);
