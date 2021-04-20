@@ -1,4 +1,5 @@
-import PostPreview from '../components/post-preview'
+import PostPreview from "../components/post-preview";
+import { Card, Col, Row } from "reactstrap";
 
 export default function MoreStories({ posts }) {
   return (
@@ -7,18 +8,24 @@ export default function MoreStories({ posts }) {
         More Stories
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-        {posts.map(post => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-            slug={post.slug}
-            excerpt={post.excerpt}
-          />
-        ))}
+        <div className="cardBlog d-flex">
+        <Row>
+          {posts.map((post) => (
+            <Col className="ml-auto mr-auto text-center" md="6">
+              <PostPreview
+                key={post.slug}
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+                slug={post.slug}
+                excerpt={post.excerpt}
+              />
+            </Col>
+          ))}
+          </Row>
+        </div>
       </div>
     </section>
-  )
+  );
 }

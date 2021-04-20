@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@linexon/*": ["components/components/*"],
+        "@components/*": ["components/*"],
+        "@images/*": ["public/images/*"],
+        "@/css/*": ["assets/css/*"],
+        "@/images/*": ["assets/images/*"],
+        "@deadline/*": ["components/construction/*"],
+      }
+    }
+  }

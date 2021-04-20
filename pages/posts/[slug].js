@@ -118,21 +118,23 @@ export default function Post({ subscription, preview }) {
 
   return (
     <Layout preview={preview}>
-      <Head>{renderMetaTags(metaTags)}</Head>
-      <Container>
-        <Header />
-        <article>
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            author={post.author}
-          />
-          <PostBody content={post.content} />
-        </article>
-        <SectionSeparator />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container>
+      <div className="navbarSpacer blogPost">
+        <Head>{renderMetaTags(metaTags)}</Head>
+        <Container>
+          <Header />
+          <article>
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              author={post.author}
+            />
+            <PostBody content={post.content} />
+          </article>
+          <SectionSeparator />
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        </Container>
+      </div>
     </Layout>
   );
 }

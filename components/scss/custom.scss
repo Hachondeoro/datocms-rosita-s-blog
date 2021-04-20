@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@media (max-width: 767px) {
+  .profileImage {
+    position: absolute;
+    text-align: right;
+  }
+  .imageBanner {
+    height: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .profileImage {
+    position: absolute;
+    right: 10px;
+    top: 250px;
+  }
+  .imageBanner {
+    height: 200px;
+  }
+}
+
+.navbarSpacer {
+  margin-top: 200px;
+}
+
+.cardBlog {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  // flex-direction: column;
+}
+.blogPost {
+  font-family: "Raleway";
+}
+
+.blogTitle {
+  color: #c96d11;
+}
+
+.blogSubtitle {
+  font-size: 0.8em;
+}
+
+.regularFont {
+  font-size: 20px;
+}
