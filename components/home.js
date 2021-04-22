@@ -145,7 +145,7 @@ const Home = () => {
               <div className="play-now">
                 {" "}
                 <a
-                  href="https://www.youtube.com/watch?v=_Drfcw8f3Bs"
+                  href="https://www.youtube.com/watch?v=8yeyJK9E4I4"
                   data-fancybox
                   data-width="640"
                   data-height="360"

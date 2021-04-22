@@ -11,7 +11,7 @@ import { metaTagsFragment, responsiveImageFragment } from "../lib/fragments";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-export async function getStaticProps({ preview }) {
+export async function getStaticProps() {
   const graphqlRequest = {
     query: `
       {
@@ -46,23 +46,17 @@ export async function getStaticProps({ preview }) {
 
       ${metaTagsFragment}
       ${responsiveImageFragment}
-    `,
-    preview,
+    `
   };
 
   return {
     props: {
-      subscription: preview
-        ? {
-            ...graphqlRequest,
-            initialData: await request(graphqlRequest),
-            token: process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN,
-            environment: process.env.NEXT_DATOCMS_ENVIRONMENT || null,
+      subscription: {
+          ...graphqlRequest,
+          initialData: await request(graphqlRequest),
+          token: process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN,
+          environment: process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN || null,
           }
-        : {
-            enabled: false,
-            initialData: await request(graphqlRequest),
-          },
     },
   };
 }
@@ -78,7 +72,7 @@ export default function Index({ subscription }) {
 
   return (
     <>
-      <Layout preview={subscription.preview}>
+      <Layout>
         <div className="navbarSpacer blogPost">
           <Head>{renderMetaTags(metaTags)}</Head>
           <Container>

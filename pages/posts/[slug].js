@@ -19,7 +19,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params, preview = false }) {
+export async function getStaticProps({ params }) {
   const graphqlRequest = {
     query: `
       query PostBySlug($slug: String) {
@@ -87,7 +87,6 @@ export async function getStaticProps({ params, preview = false }) {
       ${responsiveImageFragment}
       ${metaTagsFragment}
     `,
-    preview,
     variables: {
       slug: params.slug,
     },
@@ -95,21 +94,16 @@ export async function getStaticProps({ params, preview = false }) {
 
   return {
     props: {
-      subscription: preview
-        ? {
+      subscription: {
             ...graphqlRequest,
             initialData: await request(graphqlRequest),
             token: process.env.NEXT_EXAMPLE_CMS_DATOCMS_API_TOKEN,
           }
-        : {
-            enabled: false,
-            initialData: await request(graphqlRequest),
-          },
     },
   };
 }
 
-export default function Post({ subscription, preview }) {
+export default function Post({ subscription }) {
   const {
     data: { site, post, morePosts },
   } = useQuerySubscription(subscription);
@@ -117,7 +111,7 @@ export default function Post({ subscription, preview }) {
   const metaTags = post.seo.concat(site.favicon);
 
   return (
-    <Layout preview={preview}>
+    <Layout>
       <div className="navbarSpacer blogPost">
         <Head>{renderMetaTags(metaTags)}</Head>
         <Container>
