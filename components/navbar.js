@@ -25,7 +25,7 @@ const Navbar = () => {
               <img src="imagesrosa/rosaprofile.png" alt="Image" />
             </figure>
             <p>
-              ¡Hola! Mi nombre es María Rosa. Soy venezolana de orgullo y te doy
+              ¡Hola! Mi nombre es María Rosa. Soy venezolana y te doy
               la bienvenida a mi website.
             </p>
           </div>

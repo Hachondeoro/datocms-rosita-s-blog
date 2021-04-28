@@ -58,13 +58,19 @@
 }
 
 .datoCMS {
-  h1,
-  h2,
+  h1 {
+    font-family: "Cinzel";
+    font-size: 40px;
+  }
+  h2 {
+    font-family: "Cinzel";
+    font-size: 28px;
+  }
   h3,
   h4,
   h5 {
     font-family: "Cinzel";
-    font-size: 30px;
+    font-size: 20px;
   }
   img{
     width: 30em;
