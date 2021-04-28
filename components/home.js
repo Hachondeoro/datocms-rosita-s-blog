@@ -114,7 +114,7 @@ const Home = () => {
                         Jovenes <br></br>
                         Tripulantes{" "}
                       </h1>
-                      <p>por Rosa Rodner </p>
+                      <p>por María Rosa Rodner </p>
                     </div>
                   </div>
 

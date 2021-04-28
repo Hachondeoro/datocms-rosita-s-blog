@@ -6,6 +6,11 @@
       $(".side-widget").toggleClass("active");
       $(".section-wrapper").toggleClass("no-transform");
     });
+    $(".navbar-button").on("click", function () {
+      $(".hamburger").toggleClass("active");
+      $(".side-widget").toggleClass("active");
+      $(".section-wrapper").toggleClass("no-transform");
+    });
   });
 
   // $(".uniquePreloader").addClass("page-loaded");

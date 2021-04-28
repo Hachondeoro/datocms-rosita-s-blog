@@ -25,17 +25,16 @@ const Navbar = () => {
               <img src="imagesrosa/rosaprofile.png" alt="Image" />
             </figure>
             <p>
-              Hola! Mi nombre es Rosa. Soy venezolana de orgullo y te doy la
-              bienvenida a mi website. Aqui veras mis aventuras por el mundo y
-              todo lo que he vivido
+              ¡Hola! Mi nombre es María Rosa. Soy venezolana de orgullo y te doy
+              la bienvenida a mi website.
             </p>
           </div>
-
           <div className="widget">
-            <h6 className="widget-title">Quick datos</h6>
+            <h6 className="widget-title">Mis datos </h6>
             <p>
-              Origen: Venezuela<br></br>
-              Viviendo en: Australia
+              Email: mariarodner@gmail.com<br></br>
+              Whatsapp: +61 475 038 268<br></br>
+              Teléfono: +61 460 934 249<br></br>
             </p>
           </div>
         </div>
@@ -44,24 +43,29 @@ const Navbar = () => {
           <Link href="/">
             <a>
               {" "}
-              <img src="/imagesrosa/logo2.png" alt="Image" height="150px" />
+              <img
+                src="/imagesrosa/logo4.png"
+                alt="Image"
+                width="250px"
+                className="mobileLogo"
+              />
             </a>
           </Link>
           <div className="site-menu">
             <ul>
               <li>
                 <Link href="/myblog">
-                  <a>Mi Blog</a>
+                  <a>Artículos</a>
                 </Link>
               </li>
               <li>
                 <Link href="/acercademi">
-                  <a>Acerca de mi</a>
+                  <a>Sobre mí</a>
                 </Link>
               </li>
               <li>
-                <Link href="/misexperiencias">
-                  <a>Mis experiencias</a>
+                <Link href="/comunidad">
+                  <a>Comunidad</a>
                 </Link>
               </li>
             </ul>
@@ -69,11 +73,14 @@ const Navbar = () => {
         </div>
       </aside>
       <nav className="navbar">
- 
         <Link href="/">
           <a>
             {" "}
-            <img src="/imagesrosa/logo2.png" alt="Image" className="imageBanner" />{" "}
+            <img
+              src="/imagesrosa/logo4.png"
+              alt="Image"
+              className="imageBanner"
+            />{" "}
           </a>
         </Link>
 
@@ -81,17 +88,17 @@ const Navbar = () => {
           <ul>
             <li>
               <Link href="/myblog">
-                <a>Mi Blog</a>
+                <a>Artículos</a>
               </Link>
             </li>
             <li>
               <Link href="/acercademi">
-                <a>Acerca de mi</a>
+                <a>Sobre mí</a>
               </Link>
             </li>
             <li>
-              <Link href="/misexperiencias">
-                <a>Mis experiencias</a>
+              <Link href="/comunidad">
+                <a>Comunidad</a>
               </Link>
             </li>
           </ul>
@@ -99,9 +106,7 @@ const Navbar = () => {
 
         <div className="navbar-button">
           {" "}
-          <Link href="/acercademi">
-            <a>Acerca de mi</a>
-          </Link>{" "}
+          <a><p>Contáctame</p></a>
         </div>
         <div className="hamburger-menu">
           <svg className="hamburger" width="30" height="30" viewBox="0 0 30 30">

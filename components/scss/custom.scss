@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @media (max-width: 767px) {
   .profileImage {
     position: absolute;
     text-align: right;
   }
   .imageBanner {
-    height: 150px;
+    height: 80px;
+  }
+
+  .mobileLogo {
+    margin-top: 60px;
   }
 }
 @media (min-width: 768px) {
@@ -15,12 +19,12 @@
     top: 250px;
   }
   .imageBanner {
-    height: 200px;
+    height: 150px;
   }
 }
 
 .navbarSpacer {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .cardBlog {
@@ -43,4 +47,22 @@
 
 .regularFont {
   font-size: 20px;
+}
+
+.navbar-button {
+  cursor: pointer;
+}
+
+.datoCMS {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Cinzel";
+    font-size: 30px;
+  }
+  img{
+    width: 30em;
+  }
 }
