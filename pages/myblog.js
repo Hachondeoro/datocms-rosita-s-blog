@@ -73,7 +73,7 @@ export default function Index({ subscription }) {
   return (
     <>
       <Layout>
-        <div className="navbarSpacer blogPost">
+        <div className="blogSpacer blogPost">
           <Head>{renderMetaTags(metaTags)}</Head>
           <Container>
             {/* <Intro /> */}

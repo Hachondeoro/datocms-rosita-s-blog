@@ -112,7 +112,7 @@ export default function Post({ subscription }) {
 
   return (
     <Layout>
-      <div className="navbarSpacer blogPost">
+      <div className="blogSpacer blogPost">
         <Head>{renderMetaTags(metaTags)}</Head>
         <Container>
           <Header />
